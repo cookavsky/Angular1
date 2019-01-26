@@ -7,8 +7,23 @@
 
 body
 {
-    background: url("../assets/body.jpg") no-repeat;
+    background: url("../src/assets/img/body.jpg") no-repeat;
     background-position: center;
     background-size: cover;
     height: 100vh;
+    color: white;
+}
+
+header
+{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    padding: 2em;
+}
+
+h1
+{
+    margin-left: auto;
+    margin-left: auto;
 }
