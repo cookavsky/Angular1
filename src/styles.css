@@ -13,17 +13,3 @@ body
     height: 100vh;
     color: white;
 }
-
-header
-{
-    display: flex;
-    flex-flow: row;
-    justify-content: space-between;
-    padding: 2em;
-}
-
-h1
-{
-    margin-left: auto;
-    margin-left: auto;
-}

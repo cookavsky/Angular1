@@ -1,0 +1,19 @@
+header
+{
+    display: flex;
+    margin-bottom: 2em;
+}
+
+h1
+{
+    flex-basis: 90%;
+    text-align: center;
+    align-self: center;
+}
+
+img
+{
+    height: 6.75%;
+    width: 12.5%;
+    margin: 2em 2em 0;
+}
