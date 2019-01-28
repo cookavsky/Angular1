@@ -1,0 +1,41 @@
+section
+{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+article
+{
+    background-color: rgb(151, 146, 146, 0.5);
+    padding: 1em;
+}
+
+.Rounds
+{
+    background-color: rgb(151, 146, 146);
+    border-top-left-radius: 0.5em;
+    border-top-right-radius: 0.5em;
+}
+
+thead
+{
+    background-color: rgb(151, 146, 146, 0.8);
+}
+
+tbody
+{
+    background-color: rgb(151, 146, 146, 0.5);
+}
+
+.Nr, .Score, .Photo
+{
+    padding: 0.25em;
+}
+
+.Team
+{
+    padding: 0.25em 5em;
+}
+

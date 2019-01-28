@@ -1,0 +1,25 @@
+thead
+{
+    background-color: rgb(151, 146, 146, 0.8);
+}
+
+tbody
+{
+    background-color: rgb(151, 146, 146, 0.5);
+    text-align: center;
+}
+
+.Nr, .Mp, .W, .D, .L, .G, .Pts
+{
+    width: 3vw;
+}
+
+.Team
+{
+    width: 30vw;
+}
+
+.Form
+{
+    width: 5vw;
+}
