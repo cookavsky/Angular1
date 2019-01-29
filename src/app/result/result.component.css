@@ -39,3 +39,12 @@ tbody
     padding: 0.25em 5em;
 }
 
+.hide
+{
+    visibility: hidden;
+}
+
+.show
+{
+    visibility: visible;
+}

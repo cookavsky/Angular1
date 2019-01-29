@@ -1,4 +1,4 @@
-<table>
+<table [ngClass]="{'hide': toggleService.hiddenLRT, 'show': !toggleService.hiddenLRT}">
   <thead>
     <tr>
       <th class="Nr">#</th>

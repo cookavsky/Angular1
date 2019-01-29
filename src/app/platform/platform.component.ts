@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ToggleService } from '../toggle.service';
+
 
 @Component({
   selector: 'app-platform',
@@ -7,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PlatformComponent implements OnInit {
 
-  constructor() { }
+  constructor(public toggleService: ToggleService) { }
 
   ngOnInit() {
   }

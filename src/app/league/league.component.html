@@ -1,5 +1,5 @@
-<section class="League">
-  <button class="LeagueBtn">
+<section id="Ps4" class="League" [ngClass]="{'hide': toggleService.hiddenPL, 'show': !toggleService.hiddenPL}">
+  <button class="LeagueBtn" (click)="toggleService.toggleLeagueRT()">
     <h3>1</h3>
   </button>
   <button class="LeagueBtnPlus">

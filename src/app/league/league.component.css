@@ -28,3 +28,13 @@
     border: 1px solid rgb(0, 0, 0, 0.25);
     border-radius: 0.35em;
 }
+
+.hide
+{
+    visibility: hidden;
+}
+
+.show
+{
+    visibility: visible;
+}
