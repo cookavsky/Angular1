@@ -10,6 +10,5 @@ body
     background: url("../src/assets/img/body.jpg") no-repeat;
     background-position: center;
     background-size: cover;
-    height: 100vh;
     color: black;
 }

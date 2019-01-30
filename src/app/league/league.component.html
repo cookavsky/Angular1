@@ -1,8 +1,11 @@
 <section id="Ps4" class="League" [ngClass]="{'hide': toggleService.hiddenPL, 'show': !toggleService.hiddenPL}">
-  <button class="LeagueBtn" (click)="toggleService.toggleLeagueRT()">
-    <h3>1</h3>
+  <button class="LeagueBtn" *ngFor="let container of containers" (click)="toggleService.toggleLeagueRT()">
+    <h3>{{id}}</h3>
   </button>
-  <button class="LeagueBtnPlus">
+  <button class="LeagueBtnPlus" (click)="add()">
     <h3>+</h3>
+  </button>
+  <button class="LeagueBtnMinus" (click)="delete()">
+    <h3>-</h3>
   </button>
 </section>

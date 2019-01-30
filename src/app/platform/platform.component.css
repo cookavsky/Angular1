@@ -12,6 +12,7 @@ section
     padding: 1em;
     border-radius: 1em;
     width: 30vw;
+    height: 100%;
 }
 
 .Platform
@@ -24,6 +25,7 @@ section
 
 .PlatformBtn
 {
+    cursor: pointer;
     text-transform: uppercase;
     padding: 1em 2em;
     margin-right: 2em;

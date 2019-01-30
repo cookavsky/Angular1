@@ -14,8 +14,15 @@
   </thead>
   <tbody>
     <tr>
-      <td>1</td>
-      <td>Team 1</td>
+      <td>{{Nr}}</td>
+      <td class="Name">
+        <label [ngClass]="{'hide': hiddenName, 'show': !hiddenName && !toggleService.hiddenLRT}">
+          <input type="text" name="name" placeholder="Name" (input)="name=$event.target.value">
+        </label>
+        <button [ngClass]="{'hide': hiddenName, 'show': !hiddenName && !toggleService.hiddenLRT}" class="NameBtnAcc" (click)="accept()">
+          <h3>+</h3>
+        </button>
+      </td>
       <td>0</td>
       <td>0</td>
       <td>0</td>
@@ -30,7 +37,49 @@
           <td>W</td>
         </tr>
       </td>
-      <td>+</td>
+      <td>
+        <button class="TeamBtn" (click)="add()">
+          <h3>+</h3>
+        </button>
+        <button class="TeamBtn" (click)="delete()">
+          <h3>-</h3>
+        </button>
+      </td>
+    </tr>
+    <tr *ngFor="let container of containers">
+      <td>{{Nr}}</td>
+      <td class="Name">
+        <label [ngClass]="{'hide': hiddenName, 'show': !hiddenName && !toggleService.hiddenLRT}">
+          <input type="text" name="name" placeholder="Name" (input)="name=$event.target.value">
+        </label>
+        <button [ngClass]="{'hide': hiddenName, 'show': !hiddenName && !toggleService.hiddenLRT}" class="NameBtnAcc"
+          (click)="accept()">
+          <h3>+</h3>
+        </button>
+        <h3>{{name}}</h3>
+      </td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0:0</td>
+      <td>0</td>
+      <td>
+        <tr>
+          <td>W</td>
+          <td>D</td>
+          <td>L</td>
+          <td>W</td>
+        </tr>
+      </td>
+      <td>
+        <button class="TeamBtn" (click)="add()">
+          <h3>+</h3>
+        </button>
+        <button class="TeamBtn" (click)="delete()">
+          <h3>-</h3>
+        </button>
+      </td>
     </tr>
   </tbody>
 </table>
