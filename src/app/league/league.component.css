@@ -44,7 +44,7 @@
 
 .hide
 {
-    visibility: hidden;
+    display: none;
 }
 
 .show

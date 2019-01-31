@@ -1,5 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { ToggleService } from '../toggle.service';
+import { Injectable } from '@angular/core';
+
+@Injectable({
+  providedIn: 'root'
+})
 
 @Component({
   selector: 'app-table',
@@ -10,16 +15,17 @@ export class TableComponent implements OnInit {
   public hiddenName: boolean = false;
   name: string;
   Nr = 1;
-  containers = [];
+  teams = [];
+  containersTableP4L = [];
 
   constructor(public toggleService: ToggleService) { }
 
   add(): void {
-    this.containers.push(this.containers);
+    this.teams.push(this.teams.length);
   }
 
   delete(): void {
-    this.containers.pop();
+    this.teams.pop();
   }
 
   accept(): void {

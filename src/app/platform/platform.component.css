@@ -43,24 +43,24 @@ section
 {
     background-color: rgba(15, 17, 16, 0.5);
 }
-/*
+
 .Xbox
 {
   background: -webkit-linear-gradient(white, white, green, green);
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-*/
+
 .Ps4
 {
     background: -webkit-linear-gradient(white, white, blue, blue);
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-/*
+
 .Pc
 {
     background: -webkit-linear-gradient(white, white, black, black);
   background-clip: text;
   -webkit-text-fill-color: transparent;
-}*/
+}
