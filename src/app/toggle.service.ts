@@ -1,20 +1,18 @@
 import { Injectable } from '@angular/core';
+import { LeagueComponent } from './league/league.component';
 
 @Injectable({
   providedIn: 'root'
 })
-export class ToggleService {
 
+export class ToggleService {
   public hiddenPP4L: boolean = true;
   public hiddenPXL: boolean = true;
   public hiddenPPcL: boolean = true;
-
   public hiddenLRT: boolean = true;
 
   toggleLeagueRT(): void {
-
     this.hiddenLRT = !this.hiddenLRT;
-
   }
 
   togglePlatformP4L(): void {
@@ -44,8 +42,6 @@ export class ToggleService {
       this.hiddenPP4L = true;
     }
   }
-
-  constructor() { }
 }
 
 

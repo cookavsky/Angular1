@@ -1,6 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Injectable } from '@angular/core';
 import { ToggleService } from '../toggle.service';
-import { Injectable } from '@angular/core';
 
 @Injectable({
   providedIn: 'root'
@@ -11,12 +10,13 @@ import { Injectable } from '@angular/core';
   templateUrl: './table.component.html',
   styleUrls: ['./table.component.css']
 })
+
 export class TableComponent implements OnInit {
   public hiddenName: boolean = false;
   name: string;
   Nr = 1;
   teams = [];
-  containersTableP4L = [];
+  tables = [];
 
   constructor(public toggleService: ToggleService) { }
 
@@ -35,7 +35,5 @@ export class TableComponent implements OnInit {
     }
   }
 
-  ngOnInit() {
-  }
-
+  ngOnInit() {}
 }

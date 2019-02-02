@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { TableComponent } from './table/table.component';
 
 @Component({
   selector: 'app-root',
@@ -7,6 +8,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Tabela Ligowa';
-
-  constructor() { }
+  createTable() {
+    this.tableComponent.tables.push(this.tableComponent.tables.length);
+    console.log("SS");
+  }
+  constructor(public tableComponent: TableComponent) { }
 }

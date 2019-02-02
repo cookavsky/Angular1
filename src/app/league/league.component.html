@@ -1,6 +1,6 @@
 <!-----------------------------------       Ps4           ------------------------------------------------>
 <section class="League" [ngClass]="{'hide': toggleService.hiddenPP4L, 'show': !toggleService.hiddenPP4L}">
-  <button class="LeagueBtn" *ngFor="let container of containersPP4L, let number of containersPP4L" (click)="toggleService.toggleLeagueRT()">
+  <button class="LeagueBtn" *ngFor="let container of containersPP4L, let number of containersPP4L" (click)="toggleService.toggleLeagueRT(); platformComponent.createTable()">
     <h3>{{number + 1}}</h3>
   </button>
   <button class="LeagueBtnPlus" (click)="addPP4L()" >

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ToggleService } from '../toggle.service';
-import { TableComponent } from '../table/table.component';
+import { PlatformComponent } from '../platform/platform.component';
 
 @Component({
   selector: 'app-league',
@@ -12,25 +12,26 @@ export class LeagueComponent implements OnInit {
   containersPXL = [];
   containersPPcL = [];
 
-  constructor(public toggleService: ToggleService, private tableComponent: TableComponent) { }
+  constructor(public toggleService: ToggleService,
+    public platformComponent: PlatformComponent) { }
 
-  addPP4L(): void {
-    this.containersPP4L.push(this.containersPP4L.length); this.tableComponent.containersTableP4L.push(this.tableComponent.containersTableP4L.length);
+  private addPP4L(): void {
+    this.containersPP4L.push(this.containersPP4L.length);
   }
-  addPXL(): void {
+  public addPXL(): void {
     this.containersPXL.push(this.containersPXL.length);
   }
-  addPPcL(): void {
+  public addPPcL(): void {
     this.containersPPcL.push(this.containersPPcL.length);
   }
 
-  deletePP4L(): void {
+  public deletePP4L(): void {
     this.containersPP4L.pop();
   }
-  deletePXL(): void {
+  public deletePXL(): void {
     this.containersPXL.pop();
   }
-  deletePPcL(): void {
+  public deletePPcL(): void {
     this.containersPPcL.pop();
   }
 
