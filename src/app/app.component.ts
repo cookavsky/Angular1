@@ -9,6 +9,8 @@ import { ToggleService } from './toggle.service';
 export class AppComponent {
   title = 'Tabela Ligowa';
 
+  constructor(public toggleService: ToggleService) { }
+
   tablesPP4L = [];
   tablesPXL = [];
   tablesPPcL = [];
@@ -16,8 +18,6 @@ export class AppComponent {
   containersPP4L = [];
   containersPXL = [];
   containersPPcL = [];
-
-  constructor(public toggleService: ToggleService) { }
 
   addPP4L(): void {
     if (this.containersPP4L.length < 7 && this.tablesPP4L.length < 7) {

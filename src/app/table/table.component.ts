@@ -1,5 +1,4 @@
 import { Component, OnInit, Injectable } from '@angular/core';
-import { ToggleService } from '../toggle.service';
 
 @Injectable({
   providedIn: 'root'
@@ -12,27 +11,19 @@ import { ToggleService } from '../toggle.service';
 })
 
 export class TableComponent implements OnInit {
-  public hiddenName: boolean = false;
 
-  name: string;
-  Nr = 1;
+  constructor() { }
+
   teams = [];
 
-  constructor(public toggleService: ToggleService) { }
-
-  add(): void {
+  add (): void {
     this.teams.push(this.teams.length);
   }
 
-  delete(): void {
-    this.teams.pop();
-  }
+  delete (id: number): void {
+    let i = this.teams.indexOf(id);
 
-  accept(): void {
-    if (this.hiddenName === false && this.name !== undefined)
-    {
-      this.hiddenName = !this.hiddenName;
-    }
+    this.teams.splice(i, 1);
   }
 
   ngOnInit() {}

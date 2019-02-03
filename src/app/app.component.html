@@ -1,5 +1,5 @@
 <header>
-    <h1>Tabela Ligowa "Nazwa"</h1>
+    <h1>Table League "Name"</h1>
     <img src="../assets/img/logo.png" alt="Logo">
 </header>
 
@@ -53,14 +53,16 @@
         </button>
     </section>
   </article>
-  <article id ="CurrentTablePP4L" #CurrentTablePXL>
-    <app-table class="hide show" *ngFor="let table of tablesPP4L"></app-table>
-  </article>
-  <article id ="CurrentTablePXL" #CurrentTablePP4L>
-    <app-table class="hide show" *ngFor="let table of tablesPXL"></app-table>
-  </article>
-  <article id ="CurrentTablePPcL" #CurrentTablePP4L>
-    <app-table class="hide show" *ngFor="let table of tablesPPcL"></app-table>
+  <article>
+    <div id ="CurrentTablePP4L" #CurrentTablePXL>
+      <app-table class="hide show" *ngFor="let table of tablesPP4L"></app-table>
+    </div>
+    <div id ="CurrentTablePXL" #CurrentTablePP4L>
+      <app-table class="hide show" *ngFor="let table of tablesPXL"></app-table>
+    </div>
+    <div id ="CurrentTablePPcL" #CurrentTablePP4L>
+      <app-table class="hide show" *ngFor="let table of tablesPPcL"></app-table>
+    </div>
   </article>
 </main>
 <app-result></app-result>

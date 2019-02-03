@@ -1,33 +1,36 @@
-thead
+tr
 {
-    background-color: rgb(151, 146, 146, 0.8);
+    text-align: center;
 }
 
-tbody
+td
 {
     background-color: rgb(151, 146, 146, 0.5);
-    text-align: center;
 }
 
 .Nr, .Mp, .W, .D, .L, .G, .Pts
 {
     width: 3vw;
+    background-color: rgb(151, 146, 146, 0.8);
 }
 
 .Team
 {
-    width: 20vw;
+    width: 25vw;
+    background-color: rgb(151, 146, 146, 0.8);
 }
 
 .Form
 {
     width: 5vw;
+    background-color: rgb(151, 146, 146, 0.8);
 }
 
 .Name
 {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
 }
 
 input
@@ -46,29 +49,39 @@ input::placeholder
 .NameBtnAcc
 {
     cursor: pointer;
-    padding: 0.25em 0.5em;
+    width: 2vw;
+    padding: 0 0.2em;
     background-color: rgb(151, 146, 146, 0.75);
     border: 1px solid rgb(0, 0, 0, 0.25);
     border-radius: 0.35em;
 }
 
-.TeamBtn
+.TeamBtnPlus
 {
     cursor: pointer;
-    padding: 0.25em 0.5em;
-    background-color: rgb(151, 146, 146, 0.75);
+    width: 2vw;
+    background-color: rgba(14, 116, 14, 0.75);
     border: 1px solid rgb(0, 0, 0, 0.25);
     border-radius: 0.35em;
 }
 
-.TeamBtn:focus
+.TeamBtnMinus
+{
+    cursor: pointer;
+    width: 2vw;
+    background-color: rgba(116, 8, 8, 0.75);
+    border: 1px solid rgb(0, 0, 0, 0.25);
+    border-radius: 0.35em;
+}
+
+.TeamBtnPlus:focus, .TeamBtnMinus:focus, .NameBtnAcc:focus
 {
     cursor: pointer;
     color: white;
     background-color: rgba(15, 17, 16, 0.5);
 }
 
-.hide, .off
+.hide
 {
     visibility: hidden;
 }
