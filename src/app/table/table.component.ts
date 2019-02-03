@@ -13,10 +13,10 @@ import { ToggleService } from '../toggle.service';
 
 export class TableComponent implements OnInit {
   public hiddenName: boolean = false;
+
   name: string;
   Nr = 1;
   teams = [];
-  tables = [];
 
   constructor(public toggleService: ToggleService) { }
 

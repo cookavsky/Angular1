@@ -3,5 +3,64 @@
     <img src="../assets/img/logo.png" alt="Logo">
 </header>
 
-<app-platform></app-platform>
+<main class="App">
+  <article class="containerPlatform">
+    <div class="Platform">
+      <button class="PlatformBtn" (click)="toggleService.togglePlatformP4L()">
+        <h2 class="Ps4">Ps4</h2>
+      </button>
+      <button class="PlatformBtn" (click)="toggleService.togglePlatformXL()">
+        <h2 class="Xbox">Xbox</h2>
+      </button>
+      <button class="PlatformBtn" (click)="toggleService.togglePlatformPcL()">
+        <h2 class="Pc">Pc</h2>
+      </button>
+    </div>
+<!-----------------------------------       Ps4           ------------------------------------------------>
+    <section class="League" [ngClass]="{'hide': toggleService.hiddenPP4L, 'show': !toggleService.hiddenPP4L}">
+        <button class="LeagueBtn" *ngFor="let container of containersPP4L; let number of containersPP4L" (click)="ShowLeaguePP4L(number)">
+            <h3>{{number + 1}}</h3>
+        </button>
+        <button class="LeagueBtnPlus" (click)="addPP4L()">
+            <h3>+</h3>
+        </button>
+        <button class="LeagueBtnMinus" (click)="deletePP4L()">
+            <h3>-</h3>
+        </button>
+    </section>
+<!-----------------------------------       Xbox          ------------------------------------------------>
+    <section class="League" [ngClass]="{'hide': toggleService.hiddenPXL, 'show': !toggleService.hiddenPXL}">
+        <button class="LeagueBtn" *ngFor="let container of containersPXL; let number of containersPXL" (click)="ShowLeaguePXL(number)">
+            <h3>{{number + 1}}</h3>
+        </button>
+        <button class="LeagueBtnPlus" (click)="addPXL()">
+            <h3>+</h3>
+        </button>
+        <button class="LeagueBtnMinus" (click)="deletePXL()">
+            <h3>-</h3>
+        </button>
+    </section>
+<!-----------------------------------       Pc            ------------------------------------------------>
+    <section class="League" [ngClass]="{'hide': toggleService.hiddenPPcL, 'show': !toggleService.hiddenPPcL}">
+        <button class="LeagueBtn" *ngFor="let container of containersPPcL; let number of containersPPcL" (click)="ShowLeaguePPcL(number)">
+            <h3>{{number + 1}}</h3>
+        </button>
+        <button class="LeagueBtnPlus" (click)="addPPcL()">
+            <h3>+</h3>
+        </button>
+        <button class="LeagueBtnMinus" (click)="deletePPcL()">
+            <h3>-</h3>
+        </button>
+    </section>
+  </article>
+  <article id ="CurrentTablePP4L" #CurrentTablePXL>
+    <app-table class="hide show" *ngFor="let table of tablesPP4L"></app-table>
+  </article>
+  <article id ="CurrentTablePXL" #CurrentTablePP4L>
+    <app-table class="hide show" *ngFor="let table of tablesPXL"></app-table>
+  </article>
+  <article id ="CurrentTablePPcL" #CurrentTablePP4L>
+    <app-table class="hide show" *ngFor="let table of tablesPPcL"></app-table>
+  </article>
+</main>
 <app-result></app-result>

@@ -17,3 +17,124 @@ img
     width: 12.5%;
     margin: 2em 2em 0;
 }
+
+.App
+{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    margin: 0 3em 3em;
+}
+
+.containerPlatform
+{
+    background-color: rgb(151, 146, 146, 0.5);
+    padding: 1em;
+    border-radius: 1em;
+    width: 30vw;
+    height: 100%;
+}
+
+.Platform
+{
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    margin-bottom: 1em;
+}
+
+.PlatformBtn
+{
+    cursor: pointer;
+    text-transform: uppercase;
+    padding: 1em 2em;
+    margin-right: 2em;
+    background-color: rgb(151, 146, 146, 0.75);
+    border: 1px solid rgb(0, 0, 0, 0.25);
+    border-radius: 0.75em;
+}
+
+.PlatformBtn:last-child
+{
+    margin-right: 0;
+}
+
+.PlatformBtn:focus
+{
+    background-color: rgba(15, 17, 16, 0.5);
+}
+
+.Xbox
+{
+  background: -webkit-linear-gradient(white, white, green, green);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.Ps4
+{
+    background: -webkit-linear-gradient(white, white, blue, blue);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.Pc
+{
+    background: -webkit-linear-gradient(white, white, black, black);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.League
+{
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+}
+
+.LeagueBtn
+{
+    cursor: pointer;
+    padding: 1em;
+    margin-right: 1em;
+    background-color: rgb(151, 146, 146, 0.75);
+    border: 1px solid rgb(0, 0, 0, 0.25);
+    border-radius: 0.75em;
+}
+
+.LeagueBtn:focus, .LeagueBtnPlus:focus, .LeagueBtnMinus:focus
+{
+    cursor: pointer;
+    color: white;
+    background-color: rgba(15, 17, 16, 0.5);
+}
+
+.LeagueBtnPlus
+{
+    cursor: pointer;
+    margin: 1em 0.25em;
+    padding: 0.25em 0.5em;
+    background-color: rgb(151, 146, 146, 0.75);
+    border: 1px solid rgb(0, 0, 0, 0.25);
+    border-radius: 0.35em;
+}
+
+.LeagueBtnMinus
+{
+    cursor: pointer;
+    margin: 1em 0;
+    padding: 0.25em 0.5em;
+    background-color: rgb(151, 146, 146, 0.75);
+    border: 1px solid rgb(0, 0, 0, 0.25);
+    border-radius: 0.35em;
+}
+
+.hide
+{
+    display: none;
+}
+
+.show
+{
+    visibility: visible;
+}
