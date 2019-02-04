@@ -46,12 +46,25 @@ input::placeholder
     color: white;
 }
 
-.NameBtnAcc
+.NameBtnAccept
 {
     cursor: pointer;
     width: 2vw;
     padding: 0 0.2em;
     background-color: rgb(151, 146, 146, 0.75);
+    background: url("../../assets/img/accepted-151153.svg");
+    border: 1px solid rgb(0, 0, 0, 0.25);
+    border-radius: 0.35em;
+}
+
+.NameBtnEdit
+{
+    cursor: pointer;
+    width: 2vw;
+    padding: 0 0.2em;
+    background-color: rgb(151, 146, 146, 0.75);
+    background: url("../../assets/img/edit-1103598.svg");
+    background-size: 100%;
     border: 1px solid rgb(0, 0, 0, 0.25);
     border-radius: 0.35em;
 }
@@ -74,7 +87,7 @@ input::placeholder
     border-radius: 0.35em;
 }
 
-.TeamBtnPlus:focus, .TeamBtnMinus:focus, .NameBtnAcc:focus
+.TeamBtnPlus:focus, .TeamBtnMinus:focus
 {
     cursor: pointer;
     color: white;

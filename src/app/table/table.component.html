@@ -10,37 +10,36 @@
       <th class="G">G</th>
       <th class="Pts">Pts</th>
       <th class="Form">Form</th>
-      <button class="TeamBtnPlus" (click)="add()">
+      <button class="TeamBtnPlus" (click)="add(id)">
         <h3>+</h3>
       </button>
     </tr>
   </thead>
   <tbody>
-    <tr *ngFor="let team of teams, let id of index">
-      <td>{{id + 1}}</td>
+    <tr *ngFor="let team of teams">
+      <td>{{team.id}}</td>
       <td class="Name">
-        <label>
-          <input type="text" name="name" placeholder="Name" (input)="name=$event.target.value">
+        <label [ngClass]="{'hide': hiddenName, 'show': !hiddenName}">
+          <input type="text" name="name" placeholder="Name" #TeamName>
         </label>
-        <button class="NameBtnAcc" (click)="accept()">
-          <img src="../../assets/img/accepted-151153.svg">
+        <button [ngClass]="{'NameBtnEdit': hiddenName, 'NameBtnAccept': !hiddenName}" (click)="accept(TeamName.value); TeamName.value = ''">
         </button>
       </td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
+      <td>{{team.matches}}</td>
+      <td>{{team.win}}</td>
+      <td>{{team.draw}}</td>
+      <td>{{team.lose}}</td>
+      <td>{{team.goals}}</td>
+      <td>{{team.points}}</td>
       <td>
         <tr>
-          <td>W</td>
-          <td>D</td>
-          <td>L</td>
-          <td>W</td>
+          <td>{{team.form}}</td>
+          <td>{{team.form}}</td>
+          <td>{{team.form}}</td>
+          <td>{{team.form}}</td>
         </tr>
       </td>
-      <button class="TeamBtnMinus" (click)="delete(id)">
+      <button class="TeamBtnMinus" (click)="delete(team)">
         <h3>-</h3>
       </button>
     </tr>
