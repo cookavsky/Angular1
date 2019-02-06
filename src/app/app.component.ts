@@ -51,6 +51,8 @@ export class AppComponent {
     this.tablesPPcL.pop();
   }
 
+/*----------------Ps4-------*/
+
   ShowLeaguePP4L(number): void {
     let elementPP4L = document.getElementById('CurrentTablePP4L');
 
@@ -349,6 +351,8 @@ export class AppComponent {
     }
   }
 
+/*-----------------Xbox-----------*/
+
   ShowLeaguePXL(number): void {
     let elementPXL = document.getElementById('CurrentTablePXL');
 
@@ -646,6 +650,8 @@ export class AppComponent {
       }
     }
   }
+
+/*---------------------PC----------------*/
 
   ShowLeaguePPcL(number): void {
     let elementPPcL = document.getElementById('CurrentTablePPcL');

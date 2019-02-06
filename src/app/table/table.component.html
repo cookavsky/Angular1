@@ -1,47 +1,63 @@
-<table>
-  <thead>
-    <tr>
-      <th class="Nr">#</th>
-      <th class="Team">Team</th>
-      <th class="Mp">Mp</th>
-      <th class="W">W</th>
-      <th class="D">D</th>
-      <th class="L">L</th>
-      <th class="G">G</th>
-      <th class="Pts">Pts</th>
-      <th class="Form">Form</th>
-      <button class="TeamBtnPlus" (click)="add(id)">
-        <h3>+</h3>
-      </button>
-    </tr>
-  </thead>
-  <tbody>
-    <tr *ngFor="let team of teams">
-      <td>{{team.id}}</td>
-      <td class="Name">
-        <label [ngClass]="{'hide': hiddenName, 'show': !hiddenName}">
-          <input type="text" name="name" placeholder="Name" #TeamName>
-        </label>
-        <button [ngClass]="{'NameBtnEdit': hiddenName, 'NameBtnAccept': !hiddenName}" (click)="accept(TeamName.value); TeamName.value = ''">
+<article>
+  <table class="pr-0">
+    <thead>
+      <tr>
+        <th class="Nr">#</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="Num" *ngFor="let num of index">
+        <td>{{num}}</td>
+      </tr>
+    </tbody>
+  </table>
+  <table class="pl-0">
+    <thead>
+      <tr>
+        <th class="Team">Team</th>
+        <th class="Mp">Mp</th>
+        <th class="W">W</th>
+        <th class="D">D</th>
+        <th class="L">L</th>
+        <th class="G">G</th>
+        <th class="Pts">Pts</th>
+        <th class="Form">Form</th>
+        <th>
+          <button class="TeamBtnPlus" (click)="add(id)">
+            <h3>+</h3>
+          </button>
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let team of teams">
+        <td class="Name">
+          <label>
+            <h3 class="hide pl-1">{{team.name}}</h3>
+            <div class="show">
+              <input type="text" [(ngModel)]="team.name" name="teamName" #teamName placeholder="Enter Name">
+            </div>
+          </label>
+          <button class="NameBtnAccept" (click)="accept($event, teamName.value)"></button>
+        </td>
+        <td>{{team.matches}}</td>
+        <td>{{team.win}}</td>
+        <td>{{team.draw}}</td>
+        <td>{{team.lose}}</td>
+        <td>{{team.goals}}</td>
+        <td>{{team.points}}</td>
+        <td>
+          <tr>
+            <td>{{team.form}}</td>
+            <td>{{team.form}}</td>
+            <td>{{team.form}}</td>
+            <td>{{team.form}}</td>
+          </tr>
+        </td>
+        <button class="TeamBtnMinus" (click)="delete(team)">
+          <h3>-</h3>
         </button>
-      </td>
-      <td>{{team.matches}}</td>
-      <td>{{team.win}}</td>
-      <td>{{team.draw}}</td>
-      <td>{{team.lose}}</td>
-      <td>{{team.goals}}</td>
-      <td>{{team.points}}</td>
-      <td>
-        <tr>
-          <td>{{team.form}}</td>
-          <td>{{team.form}}</td>
-          <td>{{team.form}}</td>
-          <td>{{team.form}}</td>
-        </tr>
-      </td>
-      <button class="TeamBtnMinus" (click)="delete(team)">
-        <h3>-</h3>
-      </button>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
+</article>
