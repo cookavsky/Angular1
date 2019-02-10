@@ -1,5 +1,9 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Injectable } from '@angular/core';
 import { ToggleService } from '../toggle.service';
+
+@Injectable({
+  providedIn: 'root'
+})
 
 @Component({
   selector: 'app-result',
@@ -9,6 +13,9 @@ import { ToggleService } from '../toggle.service';
 export class ResultComponent implements OnInit {
 
   constructor(public toggleService: ToggleService) { }
+
+  results = [];
+  index = [];
 
   ngOnInit() {
   }

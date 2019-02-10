@@ -1,41 +1,44 @@
 <article>
-  <section>
-    <div class="Rounds">
-      <h2>Round 1</h2>
-    </div>
-    <table>
-      <thead>
-        <tr>
-          <th class="Nr">#</th>
-          <th class="Team">Home</th>
-          <th class="Team">Away</th>
-          <th class="Score">Score</th>
-          <th class="Photo">Photo</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>1</td>
-          <td>Team 1</td>
-          <td>Team 2</td>
-          <td>
-            <tr>
-              <td>
-                <input type="number" min="0" max="100">
-              </td>
-              <td>
-                <input type="number" min="0" max="100">
-              </td>
-            </tr>
-          </td>
-          <td>
-            <input type="file">
-          </td>
-          <td>
-            <h3>+</h3>
-          </td>
-        </tr>
-      </tbody>
-    </table>
-  </section>
+  <table class="pr-0">
+    <thead>
+      <tr>
+        <th class="Nr">#</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="Num" *ngFor="let num of index">
+        <td>{{num}}</td>
+      </tr>
+    </tbody>
+  </table>
+  <table class="pl-0">
+    <thead>
+      <tr>
+        <th class="Team">Home</th>
+        <th class="Team">Away</th>
+        <th class="Score">Score</th>
+        <th class="Screen">Screen</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let result of results">
+        <td>{{team.name}}</td>
+        <td>{{team.name}}</td>
+        <td>
+          <tr>
+            <td>
+              <input type="number" min="0" max="100">
+            </td>
+            <td>
+              <input type="number" min="0" max="100">
+            </td>
+          </tr>
+        </td>
+        <td>
+          <input type="file">
+        </td>
+        <button class="ScoreBtnAccept" (click)="accept()"></button>
+      </tr>
+    </tbody>
+  </table>
 </article>
