@@ -14,9 +14,6 @@ export class ResultComponent implements OnInit {
 
   constructor(public toggleService: ToggleService) { }
 
-  results = [];
-  index = [];
-
   ngOnInit() {
   }
 
