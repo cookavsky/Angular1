@@ -9,6 +9,6 @@ body
 {
     background: url("../src/assets/img/body.jpg") no-repeat;
     background-position: center;
-    background-size: cover;
+    background-size: auto;
     color: black;
 }
