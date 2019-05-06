@@ -1,6 +1,26 @@
-# Angular1
+# Angular Fifa Table
+**_Using Angular Cli, I created a table for virtual clubs at EA Sports FIFA. I created in my own way TO-DO-LIST APP._**
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.2.2.
+## Table of contents
+* [Getting Started](#getting-started)
+* [Screenshots](#screenshots)
+* [Technologies](#technologies)
+* [Development server](#development-server)
+* [Code scaffolding](#code-scaffolding)
+* [Build](#build)
+* [Running unit tests](#running-unit-tests)
+* [Running end-to-end tests](#running-end-to-end-tests)
+* [Status](#status)
+* [Author](#author)
+
+## Getting Started
+I have a big fondness for virtual clubs at EA Sports FIFA, which is why I decided to create an automated point counting website. Unfortunately, I do not have enough advanced knowledge to complete it now. I decided to stop.
+
+## Screenshots
+![Example screenshot](./src/assets/img/screencapture.jpg)
+
+## Technologies
+* [Angular CLI](https://github.com/angular/angular-cli) version 7.2.2.
 
 ## Development server
 
@@ -22,6 +42,8 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 
 Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 
-## Further help
+## Status
+To improve
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+## Author
+Created by **_cookavsky_** [Angular](https://angulartable.cookavsky.com/) - for friends Polska Panda.
