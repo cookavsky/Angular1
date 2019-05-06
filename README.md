@@ -5,6 +5,7 @@
 * [Getting Started](#getting-started)
 * [Screenshots](#screenshots)
 * [Technologies](#technologies)
+* [To do](#to-do)
 * [Development server](#development-server)
 * [Code scaffolding](#code-scaffolding)
 * [Build](#build)
@@ -21,6 +22,11 @@ I have a big fondness for virtual clubs at EA Sports FIFA, which is why I decide
 
 ## Technologies
 * [Angular CLI](https://github.com/angular/angular-cli) version 7.2.2.
+
+## To do
+* Save match points, win, lose , draw, form
+* Create round for teams
+* In round save result, add photo game, and accept
 
 ## Development server
 
