@@ -1,4 +1,4 @@
-# Angular Fifa Table
+# FiFa Virtual Table
 **_Using Angular Cli, I created a table for virtual clubs at EA Sports FIFA. I created in my own way TO-DO-LIST APP._**
 
 ## Table of contents
