@@ -52,4 +52,4 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 To improve
 
 ## Author
-Created by **_cookavsky_** [Angular](https://angulartable.cookavsky.com/) - for friends Polska Panda.
+Created by **_cookavsky_** [Angular](https://angulartable.cookavsky.com/project/FIFA_Virtual_Table) - for friends Polska Panda.
